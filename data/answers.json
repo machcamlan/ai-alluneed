@@ -1,20 +1,81 @@
 {
-  "_ghi_chu": "Mỗi mục phải được kiểm chứng với văn bản chính thức và một người có chuyên môn trước khi đặt status = da_kiem_chung. Mục mẫu dưới đây chỉ để thử khung, không chứa nội dung pháp lý.",
+  "_ghi_chu": "Các mục dưới đây là BẢN NHÁP do AI soạn từ nguồn thứ cấp (báo, trang luật, bản chép văn bản trên LuatVietnam). Chưa có mục nào được đối chiếu với văn bản gốc hoặc người có chuyên môn. Chỉ đổi status thành da_kiem_chung sau khi đối chiếu văn bản gốc và có người kiểm tra.",
   "entries": [
     {
-      "id": "mau-001",
-      "topic": "MẪU",
-      "question": "Mục mẫu để thử khung: sang tên sổ đỏ cần giấy tờ gì",
-      "keywords": ["sang ten", "so do", "giay to", "chuyen nhuong"],
-      "summary": "Nội dung mẫu, chưa phải thông tin pháp lý.",
-      "steps": ["Bước 1 (mẫu)", "Bước 2 (mẫu)"],
-      "sources": [
-        { "title": "Điền tên văn bản chính thức", "url": "https://example.com" }
+      "id": "sang-ten-chuyen-nhuong",
+      "topic": "Chuyển nhượng",
+      "question": "Sang tên sổ đỏ khi mua bán nhà đất giữa cá nhân thì làm những bước nào?",
+      "keywords": ["sang ten", "so do", "so hong", "chuyen nhuong", "mua ban", "dang ky bien dong", "giay to"],
+      "summary": "Theo nguồn thứ cấp, gồm 3 bước chính. Danh mục hồ sơ đầy đủ và mẫu đơn cần đối chiếu với văn bản gốc.",
+      "steps": [
+        "Lập hợp đồng chuyển nhượng và công chứng tại văn phòng/phòng công chứng, hoặc chứng thực tại UBND cấp xã nơi có đất (giữa hộ gia đình, cá nhân với nhau).",
+        "Khai và nộp thuế thu nhập cá nhân, lệ phí trước bạ. Theo nguồn thứ cấp: thuế TNCN 2% trên giá chuyển nhượng, lệ phí trước bạ 0,5% (cần đối chiếu cách tính và giá tính). Trường hợp được miễn vẫn phải khai.",
+        "Đăng ký biến động tại cơ quan đăng ký đất đai. Hồ sơ gồm đơn theo Mẫu số 11/ĐK (Nghị định 101/2024/NĐ-CP), Giấy chứng nhận đã cấp và các giấy tờ khác cần đối chiếu văn bản gốc.",
+        "Phí thẩm định hồ sơ tại Tây Ninh (hộ gia đình, cá nhân), theo Nghị quyết 53/2026/NQ-HĐND áp dụng từ 27/07/2026 (theo nguồn thứ cấp): chứng nhận biến động quyền sử dụng đất 300.000 đồng; biến động cả đất và tài sản gắn liền với đất 550.000 đồng. Có trường hợp giảm hoặc miễn (hộ nghèo, người có công, người khuyết tật giảm 50%...)."
       ],
-      "status": "mau",
+      "sources": [
+        { "title": "Luật Đất đai 2024 (31/2024/QH15), Điều 27 khoản 3 và Điều 133 khoản 1", "url": "https://luatvietnam.vn/dat-dai/luat-dat-dai-2024-so-31-2024-qh15-296638-d1.html" },
+        { "title": "Nghị định 101/2024/NĐ-CP, mẫu 11/ĐK", "url": "https://luatvietnam.vn/dat-dai/nghi-dinh-101-2024-nd-cp-ve-dieu-tra-co-ban-dat-dai-dang-ky-cap-so-do-361766-d1.html" },
+        { "title": "Nguồn thứ cấp: LuatVietnam - sang tên một phần thửa đất", "url": "https://luatvietnam.vn/dat-dai-nha-o/sang-ten-mot-phan-thua-dat-567-25704-article.html" },
+        { "title": "Nguồn thứ cấp: Thư viện Pháp luật - phí thẩm định hồ sơ Tây Ninh 2026 (Nghị quyết 53/2026/NQ-HĐND)", "url": "https://thuvienphapluat.vn/chinh-sach-phap-luat-moi/vn/ho-tro-phap-luat/bat-dong-san/118668/phi-tham-dinh-ho-so-cap-so-do-tinh-tay-ninh-nam-2026-moi-nhat" },
+        { "title": "Nguồn thứ cấp: Thư viện Pháp luật - các khoản phải nộp khi làm sổ đỏ", "url": "https://thuvienphapluat.vn/chinh-sach-phap-luat-moi/vn/ho-tro-phap-luat/bat-dong-san/73025/nhung-khoan-tien-phai-nop-khi-lam-so-do-tu-01-8-2024" }
+      ],
+      "status": "nhap_chua_kiem_chung",
       "verifiedBy": "",
       "verifiedDate": "",
-      "asOf": ""
+      "asOf": "chưa xác minh; luật có thể đã được sửa đổi sau 2024"
+    },
+    {
+      "id": "tach-thua-tay-ninh",
+      "topic": "Tách thửa",
+      "question": "Muốn bán hoặc tặng cho một phần thửa đất ở Tây Ninh thì phải tách thửa; điều kiện tách thửa là gì (từ 29/09/2026)?",
+      "keywords": ["tach thua", "mot phan", "chuyen nhuong", "tang cho", "dien tich toi thieu", "tay ninh", "khu vuc 1", "khu vuc 2", "dat o", "dat nong nghiep", "hop thua", "139"],
+      "summary": "Không sang tên luôn một phần thửa: phải tách thửa trước. Tại Tây Ninh, điều kiện tách thửa theo Quyết định 139/2026/QĐ-UBND (ký 18/09/2026, hiệu lực 29/09/2026, thay Quyết định 49/2024/QĐ-UBND của Tây Ninh và của Long An). Nội dung dưới đây lấy từ bản chép văn bản trên trang thứ cấp, có đoạn bị thiếu, nên phải đối chiếu văn bản gốc.",
+      "steps": [
+        "Xác định thửa đất thuộc khu vực 1 hay khu vực 2. Khu vực 1 gồm 14 phường (Kiến Tường, Long An, Tân An, Khánh Hậu, Tân Ninh, Bình Minh, Ninh Thạnh, Long Hoa, Hòa Thành, Thanh Điền, Trảng Bàng, An Tịnh, Gò Dầu, Gia Lộc) và 20 xã (Tân Hưng, Vĩnh Hưng, Mộc Hóa, Tân Thạnh, Thạnh Hóa, Thủ Thừa, Đông Thành, Hiệp Hòa, Hậu Nghĩa, Đức Hòa, Bến Lức, Cần Đước, Cần Giuộc, Tân Trụ, Tầm Vu, Dương Minh Châu, Tân Châu, Tân Biên, Châu Thành, Bến Cầu). Khu vực 2 là 62 xã còn lại.",
+        "ĐẤT Ở: diện tích tối thiểu của thửa mới và thửa còn lại (sau khi trừ phần nằm trong chỉ giới đường đỏ và vùng phụ cận bảo vệ công trình). Tiếp giáp đường có chỉ giới đường đỏ từ 19 m trở lên: khu vực 1 là 45 m², khu vực 2 là 100 m². Đường có chỉ giới đường đỏ dưới 19 m: khu vực 1 là 36 m², khu vực 2 là 80 m². Đường hoặc lối đi chưa có chỉ giới đường đỏ: khu vực 1 là 80 m², khu vực 2 là 100 m².",
+        "ĐẤT Ở: kích thước tối thiểu (rộng x sâu). Đường từ 19 m trở lên: khu vực 1 là 5 m x 5 m, khu vực 2 là 5 m x 15 m. Đường dưới 19 m: khu vực 1 là 4 m x 4 m, khu vực 2 là 4 m x 15 m. Chưa có chỉ giới đường đỏ: khu vực 1 là 4 m x 15 m, khu vực 2 là 4 m x 20 m.",
+        "ĐẤT NÔNG NGHIỆP: thửa mới và thửa còn lại tối thiểu 1.000 m² tại các xã Mỹ Quý, Đức Huệ, Bình Thành, Thạnh Phước, Tân Tây, Hậu Thạnh, Nhơn Hòa Lập, Nhơn Ninh, Bình Hòa, Tuyên Bình, Khánh Hưng, Hưng Điền, Vĩnh Thạnh, Vĩnh Châu, Truông Mít, Lộc Ninh, Cầu Khởi, Tân Đông, Tân Phú, Tân Hội, Tân Thành, Tân Hòa, Tân Lập, Thạnh Bình, Trà Vong, Phước Vinh, Hảo Đước, Long Chữ, Long Thuận. Khu vực còn lại: 1.000 m² với đất trồng lúa, rừng sản xuất, chăn nuôi tập trung và đất nông nghiệp khác; 500 m² với các loại đất nông nghiệp còn lại.",
+        "Điều kiện chung: thửa đất hoặc phần thửa chưa có thông báo thu hồi đất (nếu đã thông báo thu hồi một phần xác định được ranh giới thì phần còn lại vẫn được tách); đất không thuộc khu bảo tồn, di tích, danh lam thắng cảnh đã được xác định; đất ở mới hình thành và đất ở còn lại phải tiếp giáp đường giao thông công cộng (hoặc đất Nhà nước quản lý tiếp giáp đường, hoặc lối đi nối ra đường).",
+        "Nếu thửa đất ở không tiếp giáp đường: có thể tách khi dành một phần đất làm lối đi hoặc được hộ liền kề đồng ý cho đi qua, đồng thời thửa có đất ở đã được cấp giấy chứng nhận có nguồn gốc là công nhận quyền sử dụng đất, thửa mới và thửa còn lại phải tiếp giáp lối đi; trước khi tách phải cắm mốc xác định lối đi; hộ liền kề đồng ý phải bằng văn bản có chữ ký.",
+        "Các trường hợp đặc biệt (Điều 14, theo bản chép): hộ nghèo/cận nghèo hoặc hoàn cảnh đặc biệt khó khăn tách để chuyển nhượng (do UBND cấp xã xem xét); đã hiến đất hoặc đồng ý thu hồi một phần thửa không bồi thường cho mục đích công cộng; cha mẹ tặng cho con; thừa kế; đất ở hiện hữu tiếp giáp đường nhưng không đủ kích thước/diện tích. Với đất ở, mức tối thiểu cho các trường hợp này là chiều rộng và chiều sâu 4 m và diện tích 25 m². Mỗi trường hợp chỉ được giải quyết tách thửa 1 lần.",
+        "Nộp hồ sơ đề nghị tách thửa theo trình tự hiện hành (nguồn thứ cấp nêu Nghị định 151/2025/NĐ-CP áp dụng từ 01/07/2025; nơi nộp: Trung tâm Phục vụ hành chính công hoặc Văn phòng đăng ký đất đai), sau đó mới làm thủ tục sang tên cho phần đã tách (công chứng/chứng thực, thuế và lệ phí, đăng ký biến động)."
+      ],
+      "caveats": [
+        "Bản chép văn bản trên LuatVietnam có đoạn thiếu hoặc bị ẩn (ví dụ một số khoản của Điều 1, Điều 3, Điều 4 và nội dung Điều 17 điều khoản chuyển tiếp). Chưa biết hồ sơ nộp trước 29/09/2026 được xử lý theo quy định cũ hay mới.",
+        "Chưa xác minh bản gốc từ nguồn chính thức (Công báo hoặc cổng thông tin của tỉnh) và chưa kiểm tra văn bản sửa đổi sau 18/09/2026.",
+        "Chưa xác minh cách xác định chỉ giới đường đỏ của từng tuyến đường cụ thể và nơi nộp hồ sơ thực tế ở từng xã, phường sau sáp nhập. Phải hỏi cơ quan có thẩm quyền."
+      ],
+      "sources": [
+        { "title": "Quyết định 139/2026/QĐ-UBND Tây Ninh (bản chép trên LuatVietnam, chưa phải bản gốc)", "url": "https://luatvietnam.vn/dat-dai/quyet-dinh-139-2026-qd-ubnd-tay-ninh-dieu-kien-tach-thua-dat-hop-thua-va-dien-tich-toi-thieu-448107-d2.html" },
+        { "title": "Luật Đất đai 2024, Điều 220 (nguyên tắc, điều kiện tách thửa)", "url": "https://luatvietnam.vn/dat-dai/luat-dat-dai-2024-so-31-2024-qh15-296638-d1.html" },
+        { "title": "Nghị định 101/2024/NĐ-CP, Điều 37 khoản 18 (theo LuatVietnam)", "url": "https://luatvietnam.vn/dat-dai-nha-o/sang-ten-mot-phan-thua-dat-567-25704-article.html" },
+        { "title": "Báo Lao Động: thủ tục tách thửa từ 01/07/2025 (Nghị định 151/2025/NĐ-CP)", "url": "https://laodong.vn/bat-dong-san/huong-dan-thuc-hien-thu-tuc-tach-thua-dat-tu-ngay-172025-1527643.ldo" }
+      ],
+      "status": "nhap_chua_kiem_chung",
+      "verifiedBy": "",
+      "verifiedDate": "",
+      "asOf": "theo Quyết định 139/2026/QĐ-UBND (hiệu lực 29/09/2026); chưa xác minh bản gốc"
+    },
+    {
+      "id": "thua-ke-quyen-su-dung-dat",
+      "topic": "Thừa kế",
+      "question": "Nhận thừa kế đất thì làm thủ tục gì để đứng tên sổ đỏ?",
+      "keywords": ["thua ke", "di san", "khai nhan", "phan chia", "dang ky bien dong", "30 ngay"],
+      "summary": "Theo nguồn thứ cấp: khai nhận hoặc thỏa thuận phân chia di sản tại văn phòng công chứng, rồi đăng ký biến động. Nguồn thứ cấp nêu thời hạn đăng ký là 30 ngày kể từ ngày phân chia xong, cần đối chiếu văn bản gốc.",
+      "steps": [
+        "Thực hiện khai nhận di sản hoặc thỏa thuận phân chia di sản tại văn phòng công chứng.",
+        "Đăng ký biến động tại cơ quan đăng ký đất đai. Nguồn thứ cấp nêu thời hạn 30 ngày kể từ ngày phân chia xong quyền sử dụng đất là di sản (cần xác minh).",
+        "Danh mục hồ sơ cụ thể cần đối chiếu Nghị định hướng dẫn hiện hành."
+      ],
+      "sources": [
+        { "title": "Nguồn thứ cấp: Thư viện Pháp luật - đăng ký biến động khi thừa kế", "url": "https://thuvienphapluat.vn/phap-luat-nha-dat/thua-ke-quyen-su-dung-dat-thi-co-phai-tien-hanh-dang-ky-bien-dong-dat-dai-khong-12146.html" },
+        { "title": "Nguồn thứ cấp: AMI Law Firm - sang tên khi nhận thừa kế theo Luật Đất đai 2024", "url": "https://amilawfirm.com/thu-tuc-sang-ten-quyen-su-dung-dat-khi-nhan-thua-ke-theo-luat-dat-dai-2024/" }
+      ],
+      "status": "nhap_chua_kiem_chung",
+      "verifiedBy": "",
+      "verifiedDate": "",
+      "asOf": "chưa xác minh"
     }
   ]
 }

@@ -96,6 +96,7 @@
     var src = (e.sources || []).map(function (s) {
       return '<li><a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.title) + "</a></li>";
     }).join("");
+    var cav = (e.caveats || []).map(function (s) { return "<li>" + esc(s) + "</li>"; }).join("");
     var warn = e.status === "da_kiem_chung" ? "" :
       '<div class="unverified">CHƯA KIỂM CHỨNG &mdash; không dùng để ra quyết định.</div>';
     return '<div class="card">' +
@@ -103,6 +104,7 @@
       "<h2>" + esc(e.question) + "</h2>" +
       (e.summary ? "<p>" + esc(e.summary) + "</p>" : "") +
       (steps ? "<ol>" + steps + "</ol>" : "") +
+      (cav ? "<strong>Chưa xác minh / cần lưu ý:</strong><ul>" + cav + "</ul>" : "") +
       (src ? "<strong>Nguồn:</strong><ul>" + src + "</ul>" : "") +
       '<div class="meta">Kiểm chứng bởi: ' + esc(e.verifiedBy || "chưa có") +
       " &middot; Ngày: " + esc(e.verifiedDate || "chưa có") +
