@@ -1,0 +1,46 @@
+{
+  "locations": [
+    { "id": "tay-ninh", "name": "Tây Ninh (phường Tân Ninh)", "lat": 11.31, "lon": 106.10 },
+    { "id": "hoa-thanh", "name": "Hòa Thành", "lat": 11.28, "lon": 106.13 },
+    { "id": "trang-bang", "name": "Trảng Bàng", "lat": 11.03, "lon": 106.37 },
+    { "id": "go-dau", "name": "Gò Dầu", "lat": 11.00, "lon": 106.27 },
+    { "id": "tan-an", "name": "Tân An (Long An cũ)", "lat": 10.53, "lon": 106.41 },
+    { "id": "moc-hoa", "name": "Mộc Hóa (Long An cũ)", "lat": 10.78, "lon": 105.95 }
+  ],
+  "dien": {
+    "title": "Lịch cắt điện",
+    "intro": "Không sao chép lịch về đây vì lịch đổi liên tục và dễ sai. Hãy tra trực tiếp trên trang chính thức.",
+    "links": [
+      {
+        "title": "Tra cứu lịch ngừng, giảm cung cấp điện - EVNSPC",
+        "url": "https://www.cskh.evnspc.vn/TraCuu/LichNgungGiamCungCapDien",
+        "note": "Chọn «Công ty Điện lực Tây Ninh», sau đó chọn điện lực quản lý khu vực của bạn; hoặc tra theo mã khách hàng (mã in trên hóa đơn tiền điện)."
+      }
+    ],
+    "caveat": "Sau sáp nhập Tây Ninh và Long An, chưa xác minh khu vực Long An cũ thuộc công ty điện lực nào trên trang này."
+  },
+  "nuoc": {
+    "title": "Lịch cúp nước",
+    "intro": "Hãy xem thông báo chính thức của đơn vị cấp nước nơi bạn ở.",
+    "links": [
+      {
+        "title": "Công ty CP Cấp thoát nước Tây Ninh: thông báo tạm ngưng cung cấp nước",
+        "url": "https://capthoatnuoctayninh.com.vn/Tin-tuc/thong-bao-tam-ngung-cung-cap-nuoc-mot-so-phuong-xa-80.html",
+        "note": "Trang tin của công ty (đường dẫn dẫn đến một thông báo cụ thể; tìm mục Tin tức để xem thông báo mới)."
+      },
+      {
+        "title": "Cấp nước Long An: lịch cúp nước",
+        "url": "https://capnuoclongan.com/lich-cup-nuoc/",
+        "note": "Dành cho khu vực Long An cũ."
+      }
+    ],
+    "caveat": "Chưa xác minh đơn vị cấp nước theo từng xã, phường sau sáp nhập."
+  },
+  "reminderTypes": [
+    { "id": "dang-kiem", "name": "Đăng kiểm xe", "hint": "Chu kỳ đăng kiểm tùy loại xe và tuổi xe. Hãy nhập ngày hết hạn ghi trên giấy chứng nhận hoặc tem kiểm định." },
+    { "id": "gplx", "name": "Giấy phép lái xe", "hint": "Theo bài tổng hợp của Chính phủ (08/2024): hạng A1, A, B1 không thời hạn; hạng B và C1 có thời hạn 10 năm kể từ ngày cấp. Hạng khác và bằng cấp trước đây: nhập đúng ngày hết hạn ghi trên bằng." },
+    { "id": "bhxh-tu-nguyen", "name": "Đóng BHXH tự nguyện", "hint": "Thời hạn đóng phụ thuộc phương thức bạn chọn (tháng, quý, 6 tháng, năm). Hãy hỏi cơ quan BHXH rồi nhập ngày đến hạn." },
+    { "id": "bhyt", "name": "Thẻ BHYT", "hint": "Nhập ngày hết hạn ghi trên thẻ BHYT." },
+    { "id": "khac", "name": "Giấy tờ khác", "hint": "Nhập tên giấy tờ và ngày hết hạn." }
+  ]
+}

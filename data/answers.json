@@ -1,81 +1,727 @@
 {
-  "_ghi_chu": "Các mục dưới đây là BẢN NHÁP do AI soạn từ nguồn thứ cấp (báo, trang luật, bản chép văn bản trên LuatVietnam). Chưa có mục nào được đối chiếu với văn bản gốc hoặc người có chuyên môn. Chỉ đổi status thành da_kiem_chung sau khi đối chiếu văn bản gốc và có người kiểm tra.",
+  "_ghi_chu": "category: dat-dai | bao-hiem-viec-lam | suc-khoe | mua-sam. kind: thu-tuc (có quy định) | kinh-nghiem (gợi ý chung, không phải quy định). Mỗi bước: what, where, documents, cost, time, details, caveat. Trường trống = chưa có dữ liệu. checkedOn = ngày AI tra cứu nguồn (không phải ngày kiểm chứng bởi người). Tất cả mục hiện là BẢN NHÁP chưa kiểm chứng.",
   "entries": [
     {
       "id": "sang-ten-chuyen-nhuong",
-      "topic": "Chuyển nhượng",
-      "question": "Sang tên sổ đỏ khi mua bán nhà đất giữa cá nhân thì làm những bước nào?",
-      "keywords": ["sang ten", "so do", "so hong", "chuyen nhuong", "mua ban", "dang ky bien dong", "giay to"],
-      "summary": "Theo nguồn thứ cấp, gồm 3 bước chính. Danh mục hồ sơ đầy đủ và mẫu đơn cần đối chiếu với văn bản gốc.",
+      "category": "dat-dai",
+      "kind": "thu-tuc",
+      "title": "Sang tên sổ đỏ (mua bán, chuyển nhượng giữa cá nhân)",
+      "keywords": ["sang ten", "so do", "so hong", "chuyen nhuong", "mua ban dat", "mua dat", "mua nha", "dang ky bien dong", "giay chung nhan", "gcn"],
+      "summary": "Theo nguồn thứ cấp, gồm công chứng hợp đồng, khai thuế và lệ phí, đăng ký biến động. Nếu chỉ chuyển một phần thửa thì phải tách thửa trước.",
+      "costs": [
+        { "label": "Phí thẩm định hồ sơ (Tây Ninh, cá nhân): biến động quyền sử dụng đất", "amount": "300.000 đồng" },
+        { "label": "Phí thẩm định hồ sơ: biến động cả đất và tài sản gắn liền với đất", "amount": "550.000 đồng" },
+        { "label": "Thuế thu nhập cá nhân (nguồn thứ cấp)", "amount": "2% giá chuyển nhượng; cần xác minh cách tính và giá tính" },
+        { "label": "Lệ phí trước bạ (nguồn thứ cấp)", "amount": "0,5%; cần xác minh cách tính và giá tính" },
+        { "label": "Phí công chứng / chứng thực", "amount": "" }
+      ],
       "steps": [
-        "Lập hợp đồng chuyển nhượng và công chứng tại văn phòng/phòng công chứng, hoặc chứng thực tại UBND cấp xã nơi có đất (giữa hộ gia đình, cá nhân với nhau).",
-        "Khai và nộp thuế thu nhập cá nhân, lệ phí trước bạ. Theo nguồn thứ cấp: thuế TNCN 2% trên giá chuyển nhượng, lệ phí trước bạ 0,5% (cần đối chiếu cách tính và giá tính). Trường hợp được miễn vẫn phải khai.",
-        "Đăng ký biến động tại cơ quan đăng ký đất đai. Hồ sơ gồm đơn theo Mẫu số 11/ĐK (Nghị định 101/2024/NĐ-CP), Giấy chứng nhận đã cấp và các giấy tờ khác cần đối chiếu văn bản gốc.",
-        "Phí thẩm định hồ sơ tại Tây Ninh (hộ gia đình, cá nhân), theo Nghị quyết 53/2026/NQ-HĐND áp dụng từ 27/07/2026 (theo nguồn thứ cấp): chứng nhận biến động quyền sử dụng đất 300.000 đồng; biến động cả đất và tài sản gắn liền với đất 550.000 đồng. Có trường hợp giảm hoặc miễn (hộ nghèo, người có công, người khuyết tật giảm 50%...)."
+        {
+          "title": "Nếu chỉ chuyển một phần thửa đất: tách thửa trước",
+          "what": "Không sang tên luôn một phần thửa. Phải đề nghị tách thửa, rồi mới sang tên phần đã tách.",
+          "where": "Xem thủ tục «Tách thửa đất tại Tây Ninh».",
+          "documents": [],
+          "cost": "",
+          "time": "",
+          "details": ["Nếu chuyển nguyên thửa thì bỏ qua bước này."],
+          "caveat": ""
+        },
+        {
+          "title": "Công chứng hoặc chứng thực hợp đồng chuyển nhượng",
+          "what": "Hai bên lập hợp đồng chuyển nhượng quyền sử dụng đất rồi công chứng hoặc chứng thực (giữa hộ gia đình, cá nhân với nhau).",
+          "where": "Công chứng: văn phòng công chứng hoặc phòng công chứng. Chứng thực: UBND cấp xã nơi có đất.",
+          "documents": [],
+          "cost": "",
+          "time": "",
+          "details": ["Căn cứ theo nguồn thứ cấp: Điều 27 khoản 3 Luật Đất đai 2024."],
+          "caveat": "Danh mục giấy tờ, phí công chứng và thời gian chưa có dữ liệu."
+        },
+        {
+          "title": "Khai và nộp thuế thu nhập cá nhân, lệ phí trước bạ",
+          "what": "Khai thuế TNCN và lệ phí trước bạ. Trường hợp được miễn vẫn phải khai.",
+          "where": "",
+          "documents": [],
+          "cost": "Thuế TNCN 2% và lệ phí trước bạ 0,5% (theo nguồn thứ cấp).",
+          "time": "",
+          "details": [],
+          "caveat": "Chưa xác minh nơi nộp cụ thể, giá tính thuế, và danh mục giấy tờ."
+        },
+        {
+          "title": "Đăng ký biến động tại cơ quan đăng ký đất đai",
+          "what": "Nộp hồ sơ đăng ký biến động để cập nhật người đứng tên trên Giấy chứng nhận.",
+          "where": "Cơ quan đăng ký đất đai (Văn phòng đăng ký đất đai hoặc chi nhánh).",
+          "documents": [
+            "Đơn đăng ký biến động theo Mẫu số 11/ĐK (Nghị định 101/2024/NĐ-CP)",
+            "Giấy chứng nhận đã cấp",
+            "Các giấy tờ khác: chưa có danh mục đầy đủ"
+          ],
+          "cost": "Phí thẩm định hồ sơ (Tây Ninh, cá nhân, từ 27/07/2026): 300.000 đồng (đất) hoặc 550.000 đồng (đất và tài sản gắn liền). Có diện giảm hoặc miễn.",
+          "time": "",
+          "details": ["Căn cứ: Điều 133 khoản 1 Luật Đất đai 2024; Nghị quyết 53/2026/NQ-HĐND của Tây Ninh (theo nguồn thứ cấp)."],
+          "caveat": "Thời gian giải quyết và danh mục hồ sơ đầy đủ chưa có dữ liệu."
+        }
       ],
       "sources": [
-        { "title": "Luật Đất đai 2024 (31/2024/QH15), Điều 27 khoản 3 và Điều 133 khoản 1", "url": "https://luatvietnam.vn/dat-dai/luat-dat-dai-2024-so-31-2024-qh15-296638-d1.html" },
-        { "title": "Nghị định 101/2024/NĐ-CP, mẫu 11/ĐK", "url": "https://luatvietnam.vn/dat-dai/nghi-dinh-101-2024-nd-cp-ve-dieu-tra-co-ban-dat-dai-dang-ky-cap-so-do-361766-d1.html" },
-        { "title": "Nguồn thứ cấp: LuatVietnam - sang tên một phần thửa đất", "url": "https://luatvietnam.vn/dat-dai-nha-o/sang-ten-mot-phan-thua-dat-567-25704-article.html" },
-        { "title": "Nguồn thứ cấp: Thư viện Pháp luật - phí thẩm định hồ sơ Tây Ninh 2026 (Nghị quyết 53/2026/NQ-HĐND)", "url": "https://thuvienphapluat.vn/chinh-sach-phap-luat-moi/vn/ho-tro-phap-luat/bat-dong-san/118668/phi-tham-dinh-ho-so-cap-so-do-tinh-tay-ninh-nam-2026-moi-nhat" },
-        { "title": "Nguồn thứ cấp: Thư viện Pháp luật - các khoản phải nộp khi làm sổ đỏ", "url": "https://thuvienphapluat.vn/chinh-sach-phap-luat-moi/vn/ho-tro-phap-luat/bat-dong-san/73025/nhung-khoan-tien-phai-nop-khi-lam-so-do-tu-01-8-2024" }
+        { "title": "Luật Đất đai 2024 (31/2024/QH15)", "url": "https://luatvietnam.vn/dat-dai/luat-dat-dai-2024-so-31-2024-qh15-296638-d1.html" },
+        { "title": "Nghị định 101/2024/NĐ-CP", "url": "https://luatvietnam.vn/dat-dai/nghi-dinh-101-2024-nd-cp-ve-dieu-tra-co-ban-dat-dai-dang-ky-cap-so-do-361766-d1.html" },
+        { "title": "LuatVietnam: sang tên một phần thửa đất (thứ cấp)", "url": "https://luatvietnam.vn/dat-dai-nha-o/sang-ten-mot-phan-thua-dat-567-25704-article.html" },
+        { "title": "Thư viện Pháp luật: phí thẩm định hồ sơ Tây Ninh 2026 (thứ cấp)", "url": "https://thuvienphapluat.vn/chinh-sach-phap-luat-moi/vn/ho-tro-phap-luat/bat-dong-san/118668/phi-tham-dinh-ho-so-cap-so-do-tinh-tay-ninh-nam-2026-moi-nhat" },
+        { "title": "Thư viện Pháp luật: các khoản phải nộp khi làm sổ đỏ (thứ cấp)", "url": "https://thuvienphapluat.vn/chinh-sach-phap-luat-moi/vn/ho-tro-phap-luat/bat-dong-san/73025/nhung-khoan-tien-phai-nop-khi-lam-so-do-tu-01-8-2024" }
       ],
       "status": "nhap_chua_kiem_chung",
       "verifiedBy": "",
       "verifiedDate": "",
+      "checkedOn": "2026-10-24",
       "asOf": "chưa xác minh; luật có thể đã được sửa đổi sau 2024"
     },
     {
       "id": "tach-thua-tay-ninh",
-      "topic": "Tách thửa",
-      "question": "Muốn bán hoặc tặng cho một phần thửa đất ở Tây Ninh thì phải tách thửa; điều kiện tách thửa là gì (từ 29/09/2026)?",
-      "keywords": ["tach thua", "mot phan", "chuyen nhuong", "tang cho", "dien tich toi thieu", "tay ninh", "khu vuc 1", "khu vuc 2", "dat o", "dat nong nghiep", "hop thua", "139"],
-      "summary": "Không sang tên luôn một phần thửa: phải tách thửa trước. Tại Tây Ninh, điều kiện tách thửa theo Quyết định 139/2026/QĐ-UBND (ký 18/09/2026, hiệu lực 29/09/2026, thay Quyết định 49/2024/QĐ-UBND của Tây Ninh và của Long An). Nội dung dưới đây lấy từ bản chép văn bản trên trang thứ cấp, có đoạn bị thiếu, nên phải đối chiếu văn bản gốc.",
-      "steps": [
-        "Xác định thửa đất thuộc khu vực 1 hay khu vực 2. Khu vực 1 gồm 14 phường (Kiến Tường, Long An, Tân An, Khánh Hậu, Tân Ninh, Bình Minh, Ninh Thạnh, Long Hoa, Hòa Thành, Thanh Điền, Trảng Bàng, An Tịnh, Gò Dầu, Gia Lộc) và 20 xã (Tân Hưng, Vĩnh Hưng, Mộc Hóa, Tân Thạnh, Thạnh Hóa, Thủ Thừa, Đông Thành, Hiệp Hòa, Hậu Nghĩa, Đức Hòa, Bến Lức, Cần Đước, Cần Giuộc, Tân Trụ, Tầm Vu, Dương Minh Châu, Tân Châu, Tân Biên, Châu Thành, Bến Cầu). Khu vực 2 là 62 xã còn lại.",
-        "ĐẤT Ở: diện tích tối thiểu của thửa mới và thửa còn lại (sau khi trừ phần nằm trong chỉ giới đường đỏ và vùng phụ cận bảo vệ công trình). Tiếp giáp đường có chỉ giới đường đỏ từ 19 m trở lên: khu vực 1 là 45 m², khu vực 2 là 100 m². Đường có chỉ giới đường đỏ dưới 19 m: khu vực 1 là 36 m², khu vực 2 là 80 m². Đường hoặc lối đi chưa có chỉ giới đường đỏ: khu vực 1 là 80 m², khu vực 2 là 100 m².",
-        "ĐẤT Ở: kích thước tối thiểu (rộng x sâu). Đường từ 19 m trở lên: khu vực 1 là 5 m x 5 m, khu vực 2 là 5 m x 15 m. Đường dưới 19 m: khu vực 1 là 4 m x 4 m, khu vực 2 là 4 m x 15 m. Chưa có chỉ giới đường đỏ: khu vực 1 là 4 m x 15 m, khu vực 2 là 4 m x 20 m.",
-        "ĐẤT NÔNG NGHIỆP: thửa mới và thửa còn lại tối thiểu 1.000 m² tại các xã Mỹ Quý, Đức Huệ, Bình Thành, Thạnh Phước, Tân Tây, Hậu Thạnh, Nhơn Hòa Lập, Nhơn Ninh, Bình Hòa, Tuyên Bình, Khánh Hưng, Hưng Điền, Vĩnh Thạnh, Vĩnh Châu, Truông Mít, Lộc Ninh, Cầu Khởi, Tân Đông, Tân Phú, Tân Hội, Tân Thành, Tân Hòa, Tân Lập, Thạnh Bình, Trà Vong, Phước Vinh, Hảo Đước, Long Chữ, Long Thuận. Khu vực còn lại: 1.000 m² với đất trồng lúa, rừng sản xuất, chăn nuôi tập trung và đất nông nghiệp khác; 500 m² với các loại đất nông nghiệp còn lại.",
-        "Điều kiện chung: thửa đất hoặc phần thửa chưa có thông báo thu hồi đất (nếu đã thông báo thu hồi một phần xác định được ranh giới thì phần còn lại vẫn được tách); đất không thuộc khu bảo tồn, di tích, danh lam thắng cảnh đã được xác định; đất ở mới hình thành và đất ở còn lại phải tiếp giáp đường giao thông công cộng (hoặc đất Nhà nước quản lý tiếp giáp đường, hoặc lối đi nối ra đường).",
-        "Nếu thửa đất ở không tiếp giáp đường: có thể tách khi dành một phần đất làm lối đi hoặc được hộ liền kề đồng ý cho đi qua, đồng thời thửa có đất ở đã được cấp giấy chứng nhận có nguồn gốc là công nhận quyền sử dụng đất, thửa mới và thửa còn lại phải tiếp giáp lối đi; trước khi tách phải cắm mốc xác định lối đi; hộ liền kề đồng ý phải bằng văn bản có chữ ký.",
-        "Các trường hợp đặc biệt (Điều 14, theo bản chép): hộ nghèo/cận nghèo hoặc hoàn cảnh đặc biệt khó khăn tách để chuyển nhượng (do UBND cấp xã xem xét); đã hiến đất hoặc đồng ý thu hồi một phần thửa không bồi thường cho mục đích công cộng; cha mẹ tặng cho con; thừa kế; đất ở hiện hữu tiếp giáp đường nhưng không đủ kích thước/diện tích. Với đất ở, mức tối thiểu cho các trường hợp này là chiều rộng và chiều sâu 4 m và diện tích 25 m². Mỗi trường hợp chỉ được giải quyết tách thửa 1 lần.",
-        "Nộp hồ sơ đề nghị tách thửa theo trình tự hiện hành (nguồn thứ cấp nêu Nghị định 151/2025/NĐ-CP áp dụng từ 01/07/2025; nơi nộp: Trung tâm Phục vụ hành chính công hoặc Văn phòng đăng ký đất đai), sau đó mới làm thủ tục sang tên cho phần đã tách (công chứng/chứng thực, thuế và lệ phí, đăng ký biến động)."
+      "category": "dat-dai",
+      "kind": "thu-tuc",
+      "title": "Tách thửa đất tại Tây Ninh (từ 29/09/2026)",
+      "keywords": ["tach thua", "mot phan", "dien tich toi thieu", "tay ninh", "khu vuc 1", "khu vuc 2", "dat o", "dat nong nghiep", "hop thua", "139", "chia dat"],
+      "summary": "Theo Quyết định 139/2026/QĐ-UBND (ký 18/09/2026, hiệu lực 29/09/2026, thay Quyết định 49/2024/QĐ-UBND của Tây Ninh và của Long An). Nội dung lấy từ bản chép trên trang thứ cấp, có đoạn thiếu.",
+      "costs": [
+        { "label": "Chi phí tách thửa (phí, đo đạc)", "amount": "" }
       ],
-      "caveats": [
-        "Bản chép văn bản trên LuatVietnam có đoạn thiếu hoặc bị ẩn (ví dụ một số khoản của Điều 1, Điều 3, Điều 4 và nội dung Điều 17 điều khoản chuyển tiếp). Chưa biết hồ sơ nộp trước 29/09/2026 được xử lý theo quy định cũ hay mới.",
-        "Chưa xác minh bản gốc từ nguồn chính thức (Công báo hoặc cổng thông tin của tỉnh) và chưa kiểm tra văn bản sửa đổi sau 18/09/2026.",
-        "Chưa xác minh cách xác định chỉ giới đường đỏ của từng tuyến đường cụ thể và nơi nộp hồ sơ thực tế ở từng xã, phường sau sáp nhập. Phải hỏi cơ quan có thẩm quyền."
+      "steps": [
+        {
+          "title": "Xác định thửa đất thuộc khu vực 1 hay khu vực 2, và loại đất",
+          "what": "Tra xem xã/phường của thửa đất thuộc khu vực nào, và đất là đất ở hay đất nông nghiệp.",
+          "where": "Tự kiểm tra trước, không cần đến cơ quan.",
+          "documents": ["Giấy chứng nhận đã cấp"],
+          "cost": "",
+          "time": "",
+          "details": [
+            "Khu vực 1: 14 phường (Kiến Tường, Long An, Tân An, Khánh Hậu, Tân Ninh, Bình Minh, Ninh Thạnh, Long Hoa, Hòa Thành, Thanh Điền, Trảng Bàng, An Tịnh, Gò Dầu, Gia Lộc) và 20 xã (Tân Hưng, Vĩnh Hưng, Mộc Hóa, Tân Thạnh, Thạnh Hóa, Thủ Thừa, Đông Thành, Hiệp Hòa, Hậu Nghĩa, Đức Hòa, Bến Lức, Cần Đước, Cần Giuộc, Tân Trụ, Tầm Vu, Dương Minh Châu, Tân Châu, Tân Biên, Châu Thành, Bến Cầu).",
+            "Khu vực 2: 62 xã còn lại của tỉnh Tây Ninh."
+          ],
+          "caveat": ""
+        },
+        {
+          "title": "Kiểm tra diện tích và kích thước tối thiểu",
+          "what": "Thửa mới và thửa còn lại đều phải đạt mức tối thiểu (sau khi trừ phần nằm trong chỉ giới đường đỏ và vùng phụ cận bảo vệ công trình).",
+          "where": "Tự kiểm tra trước.",
+          "documents": [],
+          "cost": "",
+          "time": "",
+          "details": [
+            "ĐẤT Ở, diện tích tối thiểu: đường có chỉ giới đường đỏ từ 19 m trở lên: khu vực 1 là 45 m², khu vực 2 là 100 m². Đường dưới 19 m: khu vực 1 là 36 m², khu vực 2 là 80 m². Chưa có chỉ giới đường đỏ: khu vực 1 là 80 m², khu vực 2 là 100 m².",
+            "ĐẤT Ở, kích thước tối thiểu (rộng x sâu): đường từ 19 m: khu vực 1 là 5x5 m, khu vực 2 là 5x15 m. Đường dưới 19 m: khu vực 1 là 4x4 m, khu vực 2 là 4x15 m. Chưa có chỉ giới đường đỏ: khu vực 1 là 4x15 m, khu vực 2 là 4x20 m.",
+            "ĐẤT NÔNG NGHIỆP: tối thiểu 1.000 m² tại các xã Mỹ Quý, Đức Huệ, Bình Thành, Thạnh Phước, Tân Tây, Hậu Thạnh, Nhơn Hòa Lập, Nhơn Ninh, Bình Hòa, Tuyên Bình, Khánh Hưng, Hưng Điền, Vĩnh Thạnh, Vĩnh Châu, Truông Mít, Lộc Ninh, Cầu Khởi, Tân Đông, Tân Phú, Tân Hội, Tân Thành, Tân Hòa, Tân Lập, Thạnh Bình, Trà Vong, Phước Vinh, Hảo Đước, Long Chữ, Long Thuận. Khu vực còn lại: 1.000 m² với đất trồng lúa, rừng sản xuất, chăn nuôi tập trung và đất nông nghiệp khác; 500 m² với các loại đất nông nghiệp còn lại."
+          ],
+          "caveat": "Chưa xác minh cách xác định chỉ giới đường đỏ của từng tuyến đường cụ thể."
+        },
+        {
+          "title": "Kiểm tra điều kiện chung và lối đi",
+          "what": "Bảo đảm thửa không vướng thu hồi, không thuộc khu bảo tồn/di tích, và đất ở tiếp giáp đường hoặc có lối đi hợp lệ.",
+          "where": "Tự kiểm tra; cần xác nhận lại với cơ quan có thẩm quyền.",
+          "documents": ["Nếu dùng lối đi: văn bản đồng ý của hộ liền kề có chữ ký (khi đi qua đất người khác)"],
+          "cost": "",
+          "time": "",
+          "details": [
+            "Thửa hoặc phần thửa chưa có thông báo thu hồi đất. Nếu đã thông báo thu hồi một phần xác định được ranh giới thì phần còn lại vẫn được tách.",
+            "Đất không thuộc khu bảo tồn, di tích lịch sử - văn hóa, danh lam thắng cảnh đã được xác định.",
+            "Đất ở mới hình thành và đất ở còn lại phải tiếp giáp đường giao thông công cộng (hoặc đất Nhà nước quản lý tiếp giáp đường, hoặc lối đi nối ra đường).",
+            "Nếu không tiếp giáp đường: có thể tách khi dành đất làm lối đi hoặc được hộ liền kề đồng ý cho đi qua; thửa có đất ở phải đã được cấp giấy chứng nhận có nguồn gốc công nhận quyền sử dụng đất; phải cắm mốc xác định lối đi trước khi tách.",
+            "Trường hợp đặc biệt (cha mẹ tặng cho con, thừa kế, hộ nghèo/cận nghèo chuyển nhượng, đã hiến đất công cộng, đất ở hiện hữu không đủ kích thước): tối thiểu 4x4 m và 25 m² với đất ở, mỗi trường hợp chỉ giải quyết 1 lần."
+          ],
+          "caveat": "Bản chép trên trang thứ cấp có đoạn thiếu."
+        },
+        {
+          "title": "Nộp hồ sơ đề nghị tách thửa",
+          "what": "Nộp hồ sơ tách thửa theo trình tự hiện hành. Sau khi được tách thửa mới làm thủ tục sang tên cho phần đã tách.",
+          "where": "Theo nguồn thứ cấp: Trung tâm Phục vụ hành chính công hoặc Văn phòng đăng ký đất đai (cấp tỉnh).",
+          "documents": [],
+          "cost": "",
+          "time": "",
+          "details": ["Nguồn thứ cấp nêu Nghị định 151/2025/NĐ-CP áp dụng từ 01/07/2025."],
+          "caveat": "Nơi nộp thực tế sau sáp nhập, giấy tờ, chi phí và thời gian chưa có dữ liệu; chưa biết hồ sơ nộp trước 29/09/2026 xử lý theo quy định cũ hay mới (Điều 17 chưa đọc được)."
+        }
       ],
       "sources": [
-        { "title": "Quyết định 139/2026/QĐ-UBND Tây Ninh (bản chép trên LuatVietnam, chưa phải bản gốc)", "url": "https://luatvietnam.vn/dat-dai/quyet-dinh-139-2026-qd-ubnd-tay-ninh-dieu-kien-tach-thua-dat-hop-thua-va-dien-tich-toi-thieu-448107-d2.html" },
-        { "title": "Luật Đất đai 2024, Điều 220 (nguyên tắc, điều kiện tách thửa)", "url": "https://luatvietnam.vn/dat-dai/luat-dat-dai-2024-so-31-2024-qh15-296638-d1.html" },
-        { "title": "Nghị định 101/2024/NĐ-CP, Điều 37 khoản 18 (theo LuatVietnam)", "url": "https://luatvietnam.vn/dat-dai-nha-o/sang-ten-mot-phan-thua-dat-567-25704-article.html" },
-        { "title": "Báo Lao Động: thủ tục tách thửa từ 01/07/2025 (Nghị định 151/2025/NĐ-CP)", "url": "https://laodong.vn/bat-dong-san/huong-dan-thuc-hien-thu-tuc-tach-thua-dat-tu-ngay-172025-1527643.ldo" }
+        { "title": "Quyết định 139/2026/QĐ-UBND Tây Ninh (bản chép trên LuatVietnam, không phải bản gốc)", "url": "https://luatvietnam.vn/dat-dai/quyet-dinh-139-2026-qd-ubnd-tay-ninh-dieu-kien-tach-thua-dat-hop-thua-va-dien-tich-toi-thieu-448107-d2.html" },
+        { "title": "Luật Đất đai 2024, Điều 220", "url": "https://luatvietnam.vn/dat-dai/luat-dat-dai-2024-so-31-2024-qh15-296638-d1.html" },
+        { "title": "LuatVietnam: Nghị định 101/2024/NĐ-CP Điều 37 khoản 18 (thứ cấp)", "url": "https://luatvietnam.vn/dat-dai-nha-o/sang-ten-mot-phan-thua-dat-567-25704-article.html" },
+        { "title": "Báo Lao Động: thủ tục tách thửa từ 01/07/2025 (thứ cấp)", "url": "https://laodong.vn/bat-dong-san/huong-dan-thuc-hien-thu-tuc-tach-thua-dat-tu-ngay-172025-1527643.ldo" }
       ],
       "status": "nhap_chua_kiem_chung",
       "verifiedBy": "",
       "verifiedDate": "",
+      "checkedOn": "2026-10-24",
       "asOf": "theo Quyết định 139/2026/QĐ-UBND (hiệu lực 29/09/2026); chưa xác minh bản gốc"
     },
     {
       "id": "thua-ke-quyen-su-dung-dat",
-      "topic": "Thừa kế",
-      "question": "Nhận thừa kế đất thì làm thủ tục gì để đứng tên sổ đỏ?",
-      "keywords": ["thua ke", "di san", "khai nhan", "phan chia", "dang ky bien dong", "30 ngay"],
-      "summary": "Theo nguồn thứ cấp: khai nhận hoặc thỏa thuận phân chia di sản tại văn phòng công chứng, rồi đăng ký biến động. Nguồn thứ cấp nêu thời hạn đăng ký là 30 ngày kể từ ngày phân chia xong, cần đối chiếu văn bản gốc.",
+      "category": "dat-dai",
+      "kind": "thu-tuc",
+      "title": "Nhận thừa kế đất, đứng tên sổ đỏ",
+      "keywords": ["thua ke", "di san", "khai nhan", "phan chia", "dang ky bien dong", "nhan thua ke", "thua ke dat"],
+      "summary": "Theo nguồn thứ cấp: khai nhận hoặc thỏa thuận phân chia di sản tại văn phòng công chứng, rồi đăng ký biến động.",
+      "costs": [
+        { "label": "Phí công chứng", "amount": "" },
+        { "label": "Phí thẩm định hồ sơ đăng ký biến động (Tây Ninh, cá nhân)", "amount": "300.000 đồng (đất) hoặc 550.000 đồng (đất và tài sản gắn liền); cần xác minh có áp dụng cho thừa kế" }
+      ],
       "steps": [
-        "Thực hiện khai nhận di sản hoặc thỏa thuận phân chia di sản tại văn phòng công chứng.",
-        "Đăng ký biến động tại cơ quan đăng ký đất đai. Nguồn thứ cấp nêu thời hạn 30 ngày kể từ ngày phân chia xong quyền sử dụng đất là di sản (cần xác minh).",
-        "Danh mục hồ sơ cụ thể cần đối chiếu Nghị định hướng dẫn hiện hành."
+        {
+          "title": "Khai nhận hoặc thỏa thuận phân chia di sản",
+          "what": "Những người thừa kế khai nhận di sản hoặc thỏa thuận phân chia di sản.",
+          "where": "Văn phòng công chứng.",
+          "documents": [],
+          "cost": "",
+          "time": "",
+          "details": [],
+          "caveat": "Danh mục giấy tờ, phí và thời gian chưa có dữ liệu."
+        },
+        {
+          "title": "Đăng ký biến động tại cơ quan đăng ký đất đai",
+          "what": "Nộp hồ sơ đăng ký biến động để cập nhật người đứng tên trên Giấy chứng nhận.",
+          "where": "Cơ quan đăng ký đất đai (Văn phòng đăng ký đất đai hoặc chi nhánh).",
+          "documents": ["Đơn đăng ký biến động, văn bản khai nhận/phân chia di sản, Giấy chứng nhận đã cấp (chưa có danh mục đầy đủ)"],
+          "cost": "",
+          "time": "Nguồn thứ cấp nêu thời hạn đăng ký là 30 ngày kể từ ngày phân chia xong quyền sử dụng đất là di sản.",
+          "details": [],
+          "caveat": "Thời hạn 30 ngày cần xác minh với văn bản gốc."
+        }
       ],
       "sources": [
-        { "title": "Nguồn thứ cấp: Thư viện Pháp luật - đăng ký biến động khi thừa kế", "url": "https://thuvienphapluat.vn/phap-luat-nha-dat/thua-ke-quyen-su-dung-dat-thi-co-phai-tien-hanh-dang-ky-bien-dong-dat-dai-khong-12146.html" },
-        { "title": "Nguồn thứ cấp: AMI Law Firm - sang tên khi nhận thừa kế theo Luật Đất đai 2024", "url": "https://amilawfirm.com/thu-tuc-sang-ten-quyen-su-dung-dat-khi-nhan-thua-ke-theo-luat-dat-dai-2024/" }
+        { "title": "Thư viện Pháp luật: đăng ký biến động khi thừa kế (thứ cấp)", "url": "https://thuvienphapluat.vn/phap-luat-nha-dat/thua-ke-quyen-su-dung-dat-thi-co-phai-tien-hanh-dang-ky-bien-dong-dat-dai-khong-12146.html" },
+        { "title": "AMI Law Firm: sang tên khi nhận thừa kế theo Luật Đất đai 2024 (thứ cấp)", "url": "https://amilawfirm.com/thu-tuc-sang-ten-quyen-su-dung-dat-khi-nhan-thua-ke-theo-luat-dat-dai-2024/" }
       ],
       "status": "nhap_chua_kiem_chung",
       "verifiedBy": "",
       "verifiedDate": "",
+      "checkedOn": "2026-10-24",
       "asOf": "chưa xác minh"
+    },
+    {
+      "id": "tro-cap-that-nghiep",
+      "category": "bao-hiem-viec-lam",
+      "kind": "thu-tuc",
+      "title": "Nghỉ việc, xin trợ cấp thất nghiệp",
+      "keywords": ["that nghiep", "tro cap that nghiep", "bao hiem that nghiep", "bhtn", "nghi viec", "mat viec", "thoi viec", "bi sa thai"],
+      "summary": "Từ 01/01/2026 áp dụng Luật Việc làm 2025 (mức hưởng, thời gian hưởng, thời điểm hưởng). Phần danh mục hồ sơ và quy trình hằng tháng dưới đây lấy từ trang dùng quy định cũ (Luật Việc làm 2013, Nghị định 28/2015) nên phải đối chiếu với quy định hiện hành.",
+      "costs": [
+        { "label": "Khoản được nhận: trợ cấp hằng tháng", "amount": "60% mức bình quân tiền lương đóng BHTN của 6 tháng gần nhất, tối đa 5 lần lương tối thiểu vùng (Luật Việc làm 2025, Điều 39)" },
+        { "label": "Thời gian được hưởng", "amount": "Đóng đủ 12 đến 36 tháng: 3 tháng; mỗi 12 tháng đóng thêm: thêm 1 tháng; tối đa 12 tháng" },
+        { "label": "Phí nộp hồ sơ", "amount": "" }
+      ],
+      "steps": [
+        {
+          "title": "Kiểm tra điều kiện hưởng",
+          "what": "Xem mình có đủ điều kiện hưởng trợ cấp thất nghiệp không (đang đóng bảo hiểm thất nghiệp, đã chấm dứt hợp đồng, chưa có việc làm…).",
+          "where": "Tự kiểm tra; hỏi cơ quan BHXH hoặc tổ chức dịch vụ việc làm công.",
+          "documents": ["Sổ BHXH hoặc thông tin quá trình đóng"],
+          "cost": "",
+          "time": "",
+          "details": ["Điều kiện nằm ở Điều 38 Luật Việc làm 2025 (bài báo Chính phủ nêu có 4 điều kiện). Nội dung đầy đủ chưa đọc được."],
+          "caveat": "Chưa đọc đầy đủ Điều 38 Luật Việc làm 2025."
+        },
+        {
+          "title": "Chuẩn bị hồ sơ",
+          "what": "Chuẩn bị đơn đề nghị và các giấy tờ chứng minh đã chấm dứt hợp đồng lao động.",
+          "where": "Tự chuẩn bị; đơn theo mẫu của Bộ Lao động.",
+          "documents": [
+            "Đơn đề nghị hưởng trợ cấp thất nghiệp",
+            "Giấy tờ xác nhận chấm dứt hợp đồng lao động (hợp đồng đã hết hạn, quyết định thôi việc, thỏa thuận hoặc thông báo chấm dứt hợp đồng…)",
+            "Sổ BHXH",
+            "Giấy tờ tùy thân"
+          ],
+          "cost": "",
+          "time": "",
+          "details": ["Danh mục trên theo quy định cũ (Nghị định 28/2015); quy định cũ còn yêu cầu 2 ảnh 3x4. Cần đối chiếu quy định mới từ 01/01/2026."],
+          "caveat": "Danh mục hồ sơ có thể đã thay đổi theo Luật Việc làm 2025."
+        },
+        {
+          "title": "Nộp hồ sơ trong vòng 3 tháng kể từ ngày chấm dứt hợp đồng",
+          "what": "Nộp hồ sơ khi chưa có việc làm và có nhu cầu hưởng trợ cấp.",
+          "where": "Tổ chức dịch vụ việc làm công (trung tâm dịch vụ việc làm) tại địa phương; theo tin của Chính phủ có thể làm trên Cổng Dịch vụ công Quốc gia.",
+          "documents": ["Hồ sơ đã chuẩn bị ở bước trước"],
+          "cost": "",
+          "time": "Phải nộp trong 3 tháng kể từ ngày chấm dứt hợp đồng.",
+          "details": [],
+          "caveat": "Chưa xác minh tên và địa chỉ đơn vị tiếp nhận cụ thể ở Tây Ninh."
+        },
+        {
+          "title": "Nhận quyết định và tiền trợ cấp",
+          "what": "Chờ quyết định; trợ cấp tính từ ngày làm việc thứ 11 kể từ ngày nộp đủ hồ sơ. Trong thời gian hưởng có bảo hiểm y tế do Quỹ BHTN đóng.",
+          "where": "Cơ quan BHXH chi trả (theo quyết định).",
+          "documents": [],
+          "cost": "",
+          "time": "Thời điểm hưởng: ngày làm việc thứ 11 kể từ ngày nộp đủ hồ sơ (Luật Việc làm 2025, Điều 39). Thời hạn ra quyết định theo trang cũ là 20 ngày làm việc, cần xác minh.",
+          "details": [],
+          "caveat": "Thời hạn ra quyết định và ngày chi trả theo quy định cũ, cần đối chiếu."
+        },
+        {
+          "title": "Thông báo tìm việc hằng tháng",
+          "what": "Hằng tháng đến thông báo về việc tìm việc làm theo lịch hẹn trong quyết định. Không thông báo đúng hạn có thể bị ngừng hưởng tháng đó.",
+          "where": "Trung tâm dịch vụ việc làm.",
+          "documents": [],
+          "cost": "",
+          "time": "Hằng tháng theo lịch hẹn.",
+          "details": [],
+          "caveat": "Theo quy định cũ (Nghị định 28/2015, Điều 19); cần xác minh quy định mới."
+        }
+      ],
+      "sources": [
+        { "title": "Báo Chính phủ: bốn điều kiện hưởng trợ cấp thất nghiệp từ 2026 (trích Điều 38, 39 Luật Việc làm 2025)", "url": "https://baochinhphu.vn/bon-dieu-kien-huong-tro-cap-that-nghiep-tu-2026-102260116155112955.htm" },
+        { "title": "Cổng BHXH điện tử: thủ tục hưởng BHTN (dùng quy định cũ)", "url": "https://baohiemxahoidientu.vn/bhxh/thu-tuc-va-quy-trinh-lam-ho-so-huong-tro-cap-bao-hiem-that-nghiep-bhtn.html" },
+        { "title": "LuatVietnam: hướng dẫn thủ tục hưởng trợ cấp thất nghiệp", "url": "https://luatvietnam.vn/bao-hiem/huong-dan-thu-tuc-huong-tro-cap-that-nghiep-563-108498-article.html" }
+      ],
+      "status": "nhap_chua_kiem_chung",
+      "verifiedBy": "",
+      "verifiedDate": "",
+      "checkedOn": "2026-10-24",
+      "asOf": "Luật Việc làm 2025 (từ 01/01/2026) cho mức hưởng/thời điểm hưởng; phần còn lại theo quy định cũ"
+    },
+    {
+      "id": "bhxh-mot-lan",
+      "category": "bao-hiem-viec-lam",
+      "kind": "thu-tuc",
+      "title": "Rút bảo hiểm xã hội một lần",
+      "keywords": ["bhxh mot lan", "rut bhxh", "bao hiem xa hoi mot lan", "nhan bhxh 1 lan", "bao hiem xa hoi 1 lan", "rut bao hiem"],
+      "summary": "Theo Luật BHXH 2024 (Điều 70, 102) và Nghị định hướng dẫn. Người bắt đầu tham gia BHXH từ 01/07/2025 không được rút chỉ vì ngừng đóng 12 tháng. Đây là quyết định lớn, nên cân nhắc kỹ và hỏi cơ quan BHXH.",
+      "costs": [
+        { "label": "Mức hưởng một lần", "amount": "1,5 tháng lương bình quân cho mỗi năm đóng trước 2014; 2 tháng cho mỗi năm đóng từ 2014 (tháng lẻ 1-6 tính nửa năm, 7-11 tính 1 năm)" },
+        { "label": "Phí nộp hồ sơ", "amount": "" }
+      ],
+      "steps": [
+        {
+          "title": "Kiểm tra mình có thuộc trường hợp được rút không",
+          "what": "Đối chiếu với các trường hợp được hưởng một lần.",
+          "where": "Tự kiểm tra; hỏi BHXH cơ sở nếu chưa rõ.",
+          "documents": ["Sổ BHXH hoặc tra cứu quá trình đóng"],
+          "cost": "",
+          "time": "",
+          "details": [
+            "Người lao động đóng BHXH bắt buộc: đủ tuổi hưu nhưng chưa đủ 15 năm đóng; ra nước ngoài định cư; mắc một số bệnh nặng (ung thư, bại liệt, xơ gan mất bù, lao nặng, AIDS); suy giảm khả năng lao động từ 81% hoặc khuyết tật đặc biệt nặng.",
+            "Hoặc: có thời gian đóng trước 01/07/2025, sau 12 tháng không thuộc đối tượng bắt buộc và không tham gia BHXH tự nguyện, và tổng thời gian đóng chưa đủ 20 năm. Tại thời điểm giải quyết phải còn thời gian đóng trước 01/07/2025 chưa được tính hưởng.",
+            "Người đóng BHXH tự nguyện có các điều kiện tương tự (Điều 102 Luật BHXH 2024)."
+          ],
+          "caveat": "Bản đọc là bài tổng hợp trên trang thứ cấp (đăng 14/10/2026); cần đối chiếu văn bản gốc."
+        },
+        {
+          "title": "Chuẩn bị hồ sơ",
+          "what": "Lập văn bản đề nghị hưởng BHXH một lần và giấy tờ kèm theo tùy trường hợp.",
+          "where": "Tự chuẩn bị.",
+          "documents": [
+            "Văn bản đề nghị theo Mẫu số 14-HSB (Quyết định 2222/QĐ-BHXH)",
+            "Giấy tờ theo trường hợp (ví dụ biên bản giám định mức suy giảm khả năng lao động từ 81% trở lên)",
+            "Danh mục đầy đủ chưa có dữ liệu"
+          ],
+          "cost": "",
+          "time": "",
+          "details": [],
+          "caveat": "Chưa có danh mục giấy tờ đầy đủ; hỏi BHXH cơ sở."
+        },
+        {
+          "title": "Nộp hồ sơ",
+          "what": "Nộp hồ sơ và chọn cách nhận tiền (tài khoản hoặc tiền mặt).",
+          "where": "BHXH cơ sở nơi cư trú hoặc BHXH cấp tỉnh; cổng BHXH cho biết còn nộp qua giao dịch điện tử hoặc bưu điện.",
+          "documents": ["Hồ sơ đã chuẩn bị"],
+          "cost": "",
+          "time": "",
+          "details": [],
+          "caveat": "Chưa xác minh địa chỉ BHXH cụ thể ở Tây Ninh sau sáp nhập."
+        },
+        {
+          "title": "Nhận quyết định và tiền",
+          "what": "Nhận quyết định hưởng và Bản quá trình đóng BHXH (Mẫu 04-HSB), sau đó nhận tiền theo hình thức đã chọn.",
+          "where": "Cơ quan BHXH hoặc tài khoản cá nhân.",
+          "documents": [],
+          "cost": "",
+          "time": "Tối đa 05 ngày làm việc kể từ khi cơ quan BHXH nhận đủ hồ sơ; thực tế có thể khác theo địa phương.",
+          "details": [
+            "Công thức: (1,5 x mức bình quân tiền lương x số năm đóng trước 2014) + (2 x mức bình quân tiền lương x số năm đóng từ 2014).",
+            "Lương làm căn cứ được điều chỉnh theo hệ số trượt giá hằng năm (hệ số 2026 theo Công văn 340/BHXH-CSXH ngày 03/02/2026)."
+          ],
+          "caveat": "Cần cân nhắc: nhận một lần thì phần thời gian đã nhận không còn được tính để hưởng lương hưu (điểm này chưa có nguồn đọc, cần xác minh với BHXH)."
+        }
+      ],
+      "sources": [
+        { "title": "LuatVietnam: Bảo hiểm xã hội 1 lần, cách tính và thủ tục (thứ cấp, 14/10/2026)", "url": "https://luatvietnam.vn/bao-hiem/bao-hiem-xa-hoi-1-lan-563-19525-article.html" },
+        { "title": "BHXH Việt Nam: hưởng BHXH một lần cần làm gì", "url": "https://baohiemxahoi.gov.vn/tintuc/Pages/linh-vuc-bao-hiem-xa-hoi.aspx?CateID=168&ItemID=9484" }
+      ],
+      "status": "nhap_chua_kiem_chung",
+      "verifiedBy": "",
+      "verifiedDate": "",
+      "checkedOn": "2026-10-24",
+      "asOf": "theo Luật BHXH 2024 (hiệu lực 01/07/2025); chưa xác minh bản gốc"
+    },
+    {
+      "id": "kham-benh-bhyt",
+      "category": "suc-khoe",
+      "kind": "thu-tuc",
+      "title": "Đi khám bệnh bằng thẻ bảo hiểm y tế (BHYT)",
+      "keywords": ["kham benh", "bhyt", "bao hiem y te", "chuyen tuyen", "dung tuyen", "trai tuyen", "kham chua benh", "di benh vien", "the bhyt"],
+      "summary": "Chỉ là hướng dẫn thủ tục. Không thay thế ý kiến bác sĩ. Quy định khám chữa bệnh BHYT được báo là có thay đổi từ tháng 07/2026 nhưng chưa tìm được nguồn đáng tin để xác nhận, nên mọi mức hưởng dưới đây cần xác minh với cơ quan BHXH hoặc bệnh viện.",
+      "costs": [
+        { "label": "Mức BHYT chi trả khi đúng tuyến", "amount": "Theo quyền lợi trên thẻ (nguồn thứ cấp nói tối đa như khám đúng tuyến); cần xác minh" },
+        { "label": "Mức khi khám trái tuyến", "amount": "Thấp hơn; một nguồn thứ cấp nêu nội trú trái tuyến: 40% ở tuyến trung ương, 100% ở tuyến tỉnh; cần xác minh vì có thể đã đổi từ 07/2026" },
+        { "label": "Chi phí cùng chi trả", "amount": "" }
+      ],
+      "steps": [
+        {
+          "title": "Chuẩn bị giấy tờ trước khi đi",
+          "what": "Mang thẻ BHYT (hoặc mã số BHYT) và giấy tờ tùy thân có ảnh.",
+          "where": "Tại nhà.",
+          "documents": [
+            "Thẻ BHYT hoặc mã số BHYT",
+            "Căn cước công dân hoặc giấy tờ tùy thân có ảnh (khi thẻ chưa có ảnh hoặc cần đối chiếu)"
+          ],
+          "cost": "",
+          "time": "",
+          "details": [],
+          "caveat": "Nguồn là bài đăng mạng xã hội và bài thứ cấp; cần xác minh."
+        },
+        {
+          "title": "Khám tại nơi đăng ký khám chữa bệnh ban đầu",
+          "what": "Đến cơ sở ghi trên thẻ BHYT để được hưởng mức đúng tuyến.",
+          "where": "Cơ sở khám chữa bệnh ban đầu ghi trên thẻ.",
+          "documents": [],
+          "cost": "",
+          "time": "",
+          "details": ["Trường hợp cấp cứu: đến cơ sở y tế gần nhất, đừng chờ giấy tờ."],
+          "caveat": "Chưa xác minh quy định đúng tuyến sau thay đổi 07/2026."
+        },
+        {
+          "title": "Cần lên tuyến trên: xin giấy chuyển tuyến",
+          "what": "Khi cần khám ở cơ sở cao hơn, nhờ cơ sở đang khám cấp giấy chuyển tuyến và mang theo hồ sơ chuyển tuyến.",
+          "where": "Cơ sở khám chữa bệnh đang điều trị; một số nguồn nói có thể xin online qua VNeID.",
+          "documents": ["Giấy chuyển tuyến và hồ sơ chuyển tuyến của cơ sở đang khám"],
+          "cost": "",
+          "time": "",
+          "details": ["Giấy chuyển tuyến mẫu cũ (Mẫu 6, Nghị định 75/2023) được báo là bãi bỏ từ 01/01/2025; mẫu hiện hành chưa xác minh."],
+          "caveat": "Mẫu và cách xin giấy chuyển tuyến hiện hành cần xác minh."
+        }
+      ],
+      "sources": [
+        { "title": "Ebh.vn: chuyển tuyến BHYT (thứ cấp)", "url": "https://ebh.vn/bao-hiem-y-te/thu-tuc-chuyen-tuyen-bhyt" },
+        { "title": "BHXH Việt Nam: hướng dẫn chuyển tuyến KCB BHYT", "url": "https://baohiemxahoi.gov.vn/gioithieu/pages/gioi-thieu-chung.aspx?CateID=0&ItemID=13502" },
+        { "title": "MoMo: xin giấy chuyển tuyến BHYT online qua VNeID (thứ cấp)", "url": "https://www.momo.vn/blog/xin-giay-chuyen-tuyen-bao-hiem-y-te-online-c116dt2679" }
+      ],
+      "status": "nhap_chua_kiem_chung",
+      "verifiedBy": "",
+      "verifiedDate": "",
+      "checkedOn": "2026-10-24",
+      "asOf": "chưa xác minh; quy định được báo là đổi từ 07/2026"
+    },
+    {
+      "id": "dang-ky-xe-may-moi",
+      "category": "mua-sam",
+      "kind": "thu-tuc",
+      "title": "Mua xe máy mới, đăng ký biển số",
+      "keywords": ["mua xe", "xe may", "dang ky xe", "bien so", "xe moi", "bien so xe", "mua xe may moi", "le phi truoc ba xe"],
+      "summary": "Đăng ký xe lần đầu có thể làm online toàn trình bằng tài khoản định danh điện tử mức 2 (VNeID), hoặc trực tiếp tại cơ quan đăng ký xe. Dữ liệu dưới đây theo Thông tư 79/2024/TT-BCA và Thông tư 155/2025/TT-BTC (theo bài thứ cấp).",
+      "costs": [
+        { "label": "Lệ phí đăng ký, cấp biển (cấp mới) - Khu vực I", "amount": "700.000 đồng (xe trị giá đến 15 triệu); 1.400.000 đồng (trên 15 đến 40 triệu); 2.800.000 đồng (trên 40 triệu)" },
+        { "label": "Lệ phí đăng ký, cấp biển (cấp mới) - Khu vực II", "amount": "105.000 đồng" },
+        { "label": "Lệ phí trước bạ", "amount": "Chưa có dữ liệu đã xác minh. Có bài đăng nói từ 15/08/2026 miễn 100% lệ phí trước bạ khi đăng ký xe máy từ lần thứ 2; chỉ thấy tiêu đề, chưa xác minh" }
+      ],
+      "steps": [
+        {
+          "title": "Chuẩn bị giấy tờ",
+          "what": "Chuẩn bị giấy tờ chủ xe, chứng từ nguồn gốc xe, chứng từ chuyển quyền sở hữu (hóa đơn mua xe) và chứng từ đã nộp lệ phí trước bạ.",
+          "where": "Hóa đơn và chứng từ nguồn gốc xe lấy từ nơi bán xe.",
+          "documents": [
+            "Tài khoản định danh điện tử mức 2 (VNeID) hoặc căn cước/CCCD, hộ chiếu",
+            "Hóa đơn mua xe (dữ liệu hóa đơn điện tử hoặc hóa đơn giấy)",
+            "Chứng từ nguồn gốc xe (phiếu kiểm tra chất lượng xuất xưởng với xe lắp ráp trong nước, dữ liệu điện tử hoặc bản giấy)",
+            "Chứng từ nộp lệ phí trước bạ (dữ liệu điện tử hoặc giấy nộp tiền), hoặc thông báo miễn lệ phí trước bạ"
+          ],
+          "cost": "",
+          "time": "",
+          "details": ["Người được ủy quyền đi làm thay phải có văn bản ủy quyền công chứng hoặc chứng thực."],
+          "caveat": ""
+        },
+        {
+          "title": "Nộp lệ phí trước bạ",
+          "what": "Kê khai và nộp lệ phí trước bạ cho xe.",
+          "where": "Cơ quan thuế, hoặc qua Cổng Dịch vụ công.",
+          "documents": ["Hóa đơn mua xe"],
+          "cost": "Mức lệ phí trước bạ chưa có dữ liệu đã xác minh.",
+          "time": "",
+          "details": [],
+          "caveat": "Mức lệ phí trước bạ và quy định miễn từ 15/08/2026 chưa xác minh."
+        },
+        {
+          "title": "Đăng ký xe và bấm biển số",
+          "what": "Chọn một trong ba cách: online toàn trình (không cần đưa xe đến kiểm tra), online một phần (kê khai online rồi đưa xe đến cơ quan đăng ký xe), hoặc trực tiếp tại cơ quan đăng ký xe.",
+          "where": "Cổng Dịch vụ công hoặc ứng dụng định danh quốc gia VNeID; hoặc cơ quan đăng ký xe thuộc Công an.",
+          "documents": ["Giấy tờ đã chuẩn bị ở bước 1"],
+          "cost": "",
+          "time": "Cấp mới biển số: cấp ngay sau khi nhận đủ hồ sơ hợp lệ.",
+          "details": [
+            "Online toàn trình: kê khai, bấm biển số trên cổng hoặc VNeID, nộp lệ phí, rồi khi nhận kết quả nộp bản chà số máy, số khung có dán và đóng dấu của cơ sở sản xuất (hoặc bản in từ hệ thống điện tử). Nếu thông tin chà số máy, số khung không khớp khai báo thì phải mang xe đến kiểm tra."
+          ],
+          "caveat": "Chưa xác minh cơ quan đăng ký xe cụ thể ở Tây Ninh sau sáp nhập (Thông tư 62/2026/TT-BCA có nhắc phân cấp)."
+        },
+        {
+          "title": "Nộp lệ phí đăng ký và nhận kết quả",
+          "what": "Nộp lệ phí đăng ký, cấp biển; nhận biển số và giấy chứng nhận đăng ký xe.",
+          "where": "Nhận tại cơ quan đăng ký xe hoặc qua bưu chính.",
+          "documents": [],
+          "cost": "Lệ phí: Khu vực I 700.000 / 1.400.000 / 2.800.000 đồng theo giá trị xe; Khu vực II 105.000 đồng.",
+          "time": "Giấy chứng nhận đăng ký xe: không quá 02 ngày làm việc kể từ khi nhận đủ hồ sơ hợp lệ (theo Thông tư 79/2024/TT-BCA sửa bởi Thông tư 62/2026/TT-BCA).",
+          "details": [],
+          "caveat": "Chưa xác minh Tây Ninh thuộc khu vực nào để tính lệ phí."
+        }
+      ],
+      "sources": [
+        { "title": "LuatVietnam: thủ tục đăng ký xe máy mới nhất (thứ cấp)", "url": "https://luatvietnam.vn/tin-phap-luat/thu-tuc-dang-ky-xe-may-230-17657-article.html" },
+        { "title": "Cổng Dịch vụ công Bộ Công an: đăng ký xe lần đầu trực tuyến", "url": "https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/tthc?matt=58712" }
+      ],
+      "status": "nhap_chua_kiem_chung",
+      "verifiedBy": "",
+      "verifiedDate": "",
+      "checkedOn": "2026-10-24",
+      "asOf": "theo Thông tư 79/2024/TT-BCA, 155/2025/TT-BTC (qua bài thứ cấp); chưa xác minh bản gốc"
+    },
+    {
+      "id": "mua-vang",
+      "category": "mua-sam",
+      "kind": "thu-tuc",
+      "title": "Đi mua vàng, cần lưu ý gì",
+      "keywords": ["mua vang", "vang mieng", "vang nhan", "sjc", "tiem vang", "hoa don vang", "ban vang", "vang tich tru"],
+      "summary": "Thông tin về hóa đơn và nơi giao dịch theo Nghị định 340/2025/NĐ-CP (hiệu lực 09/02/2026, theo bài báo). Đây không phải lời khuyên đầu tư và không dự đoán giá.",
+      "costs": [
+        { "label": "Chênh lệch giá mua vào và bán ra", "amount": "Có; mức cụ thể chưa có dữ liệu. Xem bảng giá niêm yết của tiệm" },
+        { "label": "Tiền công chế tác (nếu là trang sức)", "amount": "" }
+      ],
+      "steps": [
+        {
+          "title": "Chọn nơi mua đã được cấp phép",
+          "what": "Mua tại tổ chức tín dụng hoặc doanh nghiệp được Ngân hàng Nhà nước cấp phép (ví dụ SJC, PNJ, DOJI, các ngân hàng thương mại), đặc biệt với vàng miếng.",
+          "where": "Cửa hàng vàng có giấy phép kinh doanh vàng; kiểm tra giấy phép tại cửa hàng.",
+          "documents": [],
+          "cost": "",
+          "time": "",
+          "details": ["Nghị định 340/2025/NĐ-CP (từ 09/02/2026): tịch thu vàng áp dụng cho kinh doanh trái phép, buôn lậu, vận chuyển trái phép qua biên giới, theo bài báo CafeF."],
+          "caveat": "Một bài đăng nói có quy định mới từ 16/10 (lấy hóa đơn điện tử, kiểm tra giấy phép); chỉ thấy đoạn trích, chưa xác minh."
+        },
+        {
+          "title": "Biết mình mua loại vàng nào",
+          "what": "Phân biệt vàng miếng, vàng nhẫn tròn trơn và vàng trang sức, vì cách giao dịch lại và mức dễ bán khác nhau.",
+          "where": "Hỏi rõ tại cửa hàng.",
+          "documents": [],
+          "cost": "",
+          "time": "",
+          "details": [
+            "Vàng miếng: nên còn nguyên bao bì, lớp seal không trầy xước hay bong tróc.",
+            "Vàng nhẫn tròn trơn: khó xác định nguồn gốc hơn; khi bán lại nơi khác có thể phải kiểm định lại tuổi vàng và bị mua giá thấp hơn."
+          ],
+          "caveat": ""
+        },
+        {
+          "title": "Lấy hóa đơn và giữ giấy tờ",
+          "what": "Yêu cầu hóa đơn khi mua và giữ cùng giấy bảo chứng/giấy tờ đi kèm.",
+          "where": "Tại cửa hàng khi thanh toán.",
+          "documents": ["Hóa đơn mua", "Giấy tờ đi kèm sản phẩm (nếu có)"],
+          "cost": "",
+          "time": "",
+          "details": [],
+          "caveat": ""
+        },
+        {
+          "title": "Khi bán lại",
+          "what": "Mang vàng đến nơi được cấp phép. Mất hóa đơn vẫn bán được theo bài báo, nhưng có thể bị kiểm định và được giá thấp hơn.",
+          "where": "Cơ sở kinh doanh vàng được cấp phép.",
+          "documents": ["Giấy tờ tùy thân", "Hóa đơn cũ nếu còn"],
+          "cost": "",
+          "time": "",
+          "details": ["Theo bài báo: pháp luật hiện hành không cấm bán vàng khi mất hóa đơn và không tịch thu vàng của người dân chỉ vì thiếu giấy tờ mua cũ."],
+          "caveat": "Nguồn là một bài báo (29/01/2026). Cần xác minh với Nghị định 340/2025/NĐ-CP."
+        }
+      ],
+      "sources": [
+        { "title": "CafeF: vàng nhẫn, vàng miếng mất hóa đơn có bán được không (29/01/2026)", "url": "https://cafef.vn/gia-vang-vuot-moc-190-trieu-dong-luong-hang-trieu-nguoi-dan-dang-giu-vang-ban-khoan-tu-9-2-vang-nhan-vang-mieng-mat-hoa-don-co-ban-duoc-khong-188260129103148514.chn" },
+        { "title": "Techcombank: kinh nghiệm mua vàng tích trữ", "url": "https://techcombank.com/thong-tin/blog/kinh-nghiem-mua-vang-tich-tru" }
+      ],
+      "status": "nhap_chua_kiem_chung",
+      "verifiedBy": "",
+      "verifiedDate": "",
+      "checkedOn": "2026-10-24",
+      "asOf": "theo bài báo 29/01/2026; chưa xác minh bản gốc"
+    },
+    {
+      "id": "mua-nem",
+      "category": "mua-sam",
+      "kind": "kinh-nghiem",
+      "title": "Mua nệm: các bước chọn và kiểm tra",
+      "keywords": ["mua nem", "nem", "nem cao su", "nem lo xo", "nem foam", "nem bong ep", "chon nem"],
+      "summary": "Gợi ý chung do AI tổng hợp, không phải quy định pháp luật và chưa có nguồn đã kiểm chứng. Hãy đối chiếu với chính sách bảo hành bằng văn bản của nơi bán.",
+      "costs": [
+        { "label": "Giá nệm", "amount": "" },
+        { "label": "Phí vận chuyển, lắp đặt (nếu có)", "amount": "" }
+      ],
+      "steps": [
+        {
+          "title": "Xác định nhu cầu và kích thước giường",
+          "what": "Đo kích thước giường hoặc khung giường (dài x rộng, độ dày tối đa nệm đặt vừa) và nhớ số người nằm, tư thế ngủ, có đau lưng không.",
+          "where": "Tại nhà.",
+          "documents": [],
+          "cost": "",
+          "time": "",
+          "details": [],
+          "caveat": "Kinh nghiệm chung, chưa có nguồn."
+        },
+        {
+          "title": "Tìm hiểu loại nệm",
+          "what": "Các loại phổ biến: nệm lò xo, nệm cao su, nệm foam, nệm bông ép. Mỗi loại khác về độ êm, độ nâng đỡ, thoáng khí, tuổi thọ và giá.",
+          "where": "Cửa hàng nệm, siêu thị điện máy, sàn thương mại điện tử.",
+          "documents": [],
+          "cost": "",
+          "time": "",
+          "details": ["Hỏi rõ vật liệu, mật độ/độ dày, và xuất xứ; so sánh cùng độ dày khi so giá."],
+          "caveat": "Kinh nghiệm chung, chưa có nguồn."
+        },
+        {
+          "title": "Nằm thử trước khi mua",
+          "what": "Nếu mua tại cửa hàng, nằm thử đúng tư thế ngủ thường ngày vài phút. Nếu mua online, xem chính sách dùng thử và đổi trả.",
+          "where": "Cửa hàng; hoặc xem điều khoản khi mua online.",
+          "documents": [],
+          "cost": "",
+          "time": "",
+          "details": [],
+          "caveat": "Kinh nghiệm chung, chưa có nguồn."
+        },
+        {
+          "title": "Chốt giá, bảo hành và giấy tờ",
+          "what": "Hỏi thời hạn bảo hành và điều kiện bảo hành (ví dụ lún, xẹp), chính sách đổi trả, phí vận chuyển; yêu cầu ghi vào hóa đơn hoặc phiếu bảo hành.",
+          "where": "Tại nơi bán.",
+          "documents": ["Hóa đơn hoặc phiếu mua hàng", "Phiếu bảo hành"],
+          "cost": "",
+          "time": "",
+          "details": [],
+          "caveat": "Kinh nghiệm chung, chưa có nguồn."
+        }
+      ],
+      "sources": [],
+      "status": "nhap_chua_kiem_chung",
+      "verifiedBy": "",
+      "verifiedDate": "",
+      "checkedOn": "2026-10-24",
+      "asOf": "gợi ý chung, không có nguồn"
+    },
+    {
+      "id": "mua-giuong",
+      "category": "mua-sam",
+      "kind": "kinh-nghiem",
+      "title": "Mua giường: các bước chọn và kiểm tra",
+      "keywords": ["mua giuong", "giuong", "giuong ngu", "giuong go", "khung giuong", "chon giuong"],
+      "summary": "Gợi ý chung do AI tổng hợp, không phải quy định pháp luật và chưa có nguồn đã kiểm chứng.",
+      "costs": [
+        { "label": "Giá giường", "amount": "" },
+        { "label": "Phí vận chuyển, lắp đặt", "amount": "" }
+      ],
+      "steps": [
+        {
+          "title": "Đo phòng và chọn kích thước",
+          "what": "Đo diện tích phòng, chiều rộng cửa và cầu thang để chắc giường mang vào được; chọn kích thước giường phù hợp số người nằm.",
+          "where": "Tại nhà.",
+          "documents": [],
+          "cost": "",
+          "time": "",
+          "details": ["Chọn kích thước giường cùng lúc với kích thước nệm để vừa nhau."],
+          "caveat": "Kinh nghiệm chung, chưa có nguồn."
+        },
+        {
+          "title": "Chọn vật liệu và kiểu giường",
+          "what": "Cân nhắc gỗ tự nhiên, gỗ công nghiệp hay khung kim loại, có ngăn kéo hoặc không; kiểm tra độ chắc của khung và mối nối.",
+          "where": "Cửa hàng nội thất, xưởng đóng giường, sàn thương mại điện tử.",
+          "documents": [],
+          "cost": "",
+          "time": "",
+          "details": ["Hỏi loại gỗ/vật liệu, lớp sơn, và có chống mối mọt không."],
+          "caveat": "Kinh nghiệm chung, chưa có nguồn."
+        },
+        {
+          "title": "Xem tận nơi hoặc yêu cầu hình ảnh thực tế",
+          "what": "Nếu có thể, xem sản phẩm thật. Nếu mua online, xem đánh giá có hình ảnh và chính sách đổi trả.",
+          "where": "Cửa hàng hoặc kênh bán online.",
+          "documents": [],
+          "cost": "",
+          "time": "",
+          "details": [],
+          "caveat": "Kinh nghiệm chung, chưa có nguồn."
+        },
+        {
+          "title": "Chốt giá, thời gian giao và bảo hành",
+          "what": "Thống nhất giá, phí giao và lắp, ngày giao; yêu cầu ghi bảo hành vào hóa đơn hoặc phiếu bảo hành. Kiểm tra hàng ngay khi nhận trước khi ký nhận.",
+          "where": "Tại nơi bán và khi nhận hàng.",
+          "documents": ["Hóa đơn hoặc phiếu mua hàng", "Phiếu bảo hành"],
+          "cost": "",
+          "time": "",
+          "details": [],
+          "caveat": "Kinh nghiệm chung, chưa có nguồn."
+        }
+      ],
+      "sources": [],
+      "status": "nhap_chua_kiem_chung",
+      "verifiedBy": "",
+      "verifiedDate": "",
+      "checkedOn": "2026-10-24",
+      "asOf": "gợi ý chung, không có nguồn"
+    },
+    {
+      "id": "mua-do-gia-dung",
+      "category": "mua-sam",
+      "kind": "kinh-nghiem",
+      "title": "Mua đồ vật dụng gia đình (tủ lạnh, máy giặt, nồi cơm…)",
+      "keywords": ["do gia dung", "mua do gia dung", "tu lanh", "may giat", "noi com", "dien may", "mua do dien", "vat dung gia dinh", "do dung gia dinh", "quat", "may lanh"],
+      "summary": "Gợi ý chung do AI tổng hợp, không phải quy định pháp luật và chưa có nguồn đã kiểm chứng.",
+      "costs": [
+        { "label": "Giá sản phẩm", "amount": "" },
+        { "label": "Phí giao, lắp đặt", "amount": "" }
+      ],
+      "steps": [
+        {
+          "title": "Xác định nhu cầu và ngân sách",
+          "what": "Ghi ra cần gì, dùng cho mấy người, đặt ở đâu (đo chỗ đặt), và mức giá tối đa chấp nhận.",
+          "where": "Tại nhà.",
+          "documents": [],
+          "cost": "",
+          "time": "",
+          "details": ["Với thiết bị điện, xem công suất và điện áp phù hợp với ổ cắm và đồng hồ điện nhà bạn."],
+          "caveat": "Kinh nghiệm chung, chưa có nguồn."
+        },
+        {
+          "title": "So sánh sản phẩm và giá",
+          "what": "So sánh 2-3 mẫu cùng tầm giá: thông số, bảo hành, chi phí điện tiêu thụ, trung tâm bảo hành gần nhà.",
+          "where": "Siêu thị điện máy, cửa hàng, sàn thương mại điện tử.",
+          "documents": [],
+          "cost": "",
+          "time": "",
+          "details": [],
+          "caveat": "Kinh nghiệm chung, chưa có nguồn."
+        },
+        {
+          "title": "Mua và kiểm tra khi nhận",
+          "what": "Kiểm tra hàng còn nguyên seal, đúng model, đủ phụ kiện, chạy thử ngay khi nhận. Yêu cầu hóa đơn.",
+          "where": "Tại cửa hàng hoặc khi giao hàng.",
+          "documents": ["Hóa đơn", "Phiếu bảo hành"],
+          "cost": "",
+          "time": "",
+          "details": [],
+          "caveat": "Kinh nghiệm chung, chưa có nguồn."
+        },
+        {
+          "title": "Giữ giấy tờ bảo hành",
+          "what": "Giữ hóa đơn, phiếu bảo hành và sách hướng dẫn; chụp ảnh lưu lại. Ghi lại số điện thoại trung tâm bảo hành.",
+          "where": "Tại nhà.",
+          "documents": ["Hóa đơn", "Phiếu bảo hành", "Sách hướng dẫn"],
+          "cost": "",
+          "time": "",
+          "details": [],
+          "caveat": "Kinh nghiệm chung, chưa có nguồn."
+        }
+      ],
+      "sources": [],
+      "status": "nhap_chua_kiem_chung",
+      "verifiedBy": "",
+      "verifiedDate": "",
+      "checkedOn": "2026-10-24",
+      "asOf": "gợi ý chung, không có nguồn"
     }
   ]
 }

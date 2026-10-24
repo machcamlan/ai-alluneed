@@ -1,0 +1,39 @@
+{
+  "_ghi_chu": "Cập nhật bằng tay. Mỗi mục có asOf (ngày của số liệu) và nguồn. Mục trống value = chưa có số liệu đáng tin. Khi cập nhật, sửa asOf và source; giao diện tự cảnh báo nếu số liệu cũ hơn 7 ngày.",
+  "updatedOn": "2026-10-24",
+  "groups": [
+    {
+      "id": "xang-dau",
+      "title": "Xăng dầu",
+      "note": "Các nguồn đưa con số khác nhau (vùng giá, thời điểm điều chỉnh). Giá tại cây xăng bạn mua có thể khác. Thứ tự giá xăng E10 và E5 trong bảng nguồn khác thường, cần đối chiếu với bảng gốc. Có tin Bộ Công Thương sắp cho doanh nghiệp tự quyết giá bán lẻ nên giá giữa các cây xăng có thể lệch nhau.",
+      "items": [
+        { "name": "Xăng E10 RON 95-III", "value": "24.860", "unit": "đồng/lít", "asOf": "2026-10-22", "note": "Giảm 1.810 so với kỳ trước (theo bảng PVOIL)", "source": { "title": "PVOIL: bảng giá xăng dầu", "url": "https://www.pvoil.com.vn/tin-gia-xang-dau" } },
+        { "name": "Xăng E5 RON 92-II", "value": "25.010", "unit": "đồng/lít", "asOf": "2026-10-22", "note": "Giảm 1.610 so với kỳ trước (theo bảng PVOIL)", "source": { "title": "PVOIL: bảng giá xăng dầu", "url": "https://www.pvoil.com.vn/tin-gia-xang-dau" } },
+        { "name": "Dầu DO 0,05S-II", "value": "29.200", "unit": "đồng/lít", "asOf": "2026-10-22", "note": "Tăng 450 so với kỳ trước (theo bảng PVOIL)", "source": { "title": "PVOIL: bảng giá xăng dầu", "url": "https://www.pvoil.com.vn/tin-gia-xang-dau" } },
+        { "name": "Dầu DO 0,001S-V", "value": "30.600", "unit": "đồng/lít", "asOf": "2026-10-22", "note": "Tăng 400 so với kỳ trước (theo bảng PVOIL)", "source": { "title": "PVOIL: bảng giá xăng dầu", "url": "https://www.pvoil.com.vn/tin-gia-xang-dau" } }
+      ]
+    },
+    {
+      "id": "vang",
+      "title": "Vàng",
+      "note": "Giá vàng biến động trong ngày; chênh lệch giữa mua vào và bán ra khác nhau theo cửa hàng. Đây không phải lời khuyên đầu tư.",
+      "items": [
+        { "name": "Vàng miếng SJC", "value": "Mua 139,3 triệu | Bán 142,3 triệu", "unit": "đồng/lượng", "asOf": "2026-10-24", "note": "Theo bảng giá trên CafeF", "source": { "title": "CafeF: giá vàng hôm nay", "url": "https://cafef.vn/du-lieu/gia-vang-hom-nay/trong-nuoc.chn" } },
+        { "name": "Vàng nhẫn", "value": "Mua 138,1 triệu | Bán 142,1 triệu", "unit": "đồng/lượng", "asOf": "2026-10-24", "note": "Theo bảng giá trên CafeF; thương hiệu cụ thể chưa rõ", "source": { "title": "CafeF: giá vàng hôm nay", "url": "https://cafef.vn/du-lieu/gia-vang-hom-nay/trong-nuoc.chn" } }
+      ]
+    },
+    {
+      "id": "nong-san",
+      "title": "Lương thực, thực phẩm",
+      "note": "Giá lúa là giá nông dân bán, không phải giá gạo bán lẻ ngoài chợ. Các mặt hàng để trống là chưa tìm được số liệu 2026 đáng tin.",
+      "items": [
+        { "name": "Lúa tươi Đài Thơm 8", "value": "6.300 - 6.500", "unit": "đồng/kg", "asOf": "2026-10-19", "note": "Giá tại Đồng bằng sông Cửu Long; năm của bài ghi theo trang", "source": { "title": "Thời báo Tài chính: giá lúa gạo ĐBSCL ngày 19/10", "url": "https://thoibaotaichinhvietnam.vn/ngay-19-10-gia-lua-gao-tai-dong-bang-song-cuu-long-it-bien-dong-205568.html" } },
+        { "name": "Lúa tươi OM 18", "value": "6.400 - 6.600", "unit": "đồng/kg", "asOf": "2026-10-19", "note": "Giá tại Đồng bằng sông Cửu Long; năm của bài ghi theo trang", "source": { "title": "Thời báo Tài chính: giá lúa gạo ĐBSCL ngày 19/10", "url": "https://thoibaotaichinhvietnam.vn/ngay-19-10-gia-lua-gao-tai-dong-bang-song-cuu-long-it-bien-dong-205568.html" } },
+        { "name": "Heo hơi (miền Nam)", "value": "", "unit": "đồng/kg", "asOf": "", "note": "Bài tìm được đề ngày 24/10 nhưng đăng năm 2025, không dùng", "source": null },
+        { "name": "Gạo bán lẻ", "value": "", "unit": "đồng/kg", "asOf": "", "note": "", "source": null },
+        { "name": "Trứng gà", "value": "", "unit": "đồng/chục", "asOf": "", "note": "", "source": null },
+        { "name": "Rau xanh", "value": "", "unit": "đồng/kg", "asOf": "", "note": "", "source": null }
+      ]
+    }
+  ]
+}
