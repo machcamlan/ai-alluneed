@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hỏi đáp thủ tục đất đai</title>
+<style>
+  :root {
+    --bg: #fafaf7; --fg: #1b1b18; --muted: #6b6b63; --card: #ffffff;
+    --line: #e2e1d9; --accent: #1f5f4a; --warn-bg: #fff4d6; --warn-fg: #6a4b00;
+    --bad-bg: #fde8e6; --bad-fg: #8a1f17;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151512; --fg: #ecebe4; --muted: #9a998f; --card: #1f1f1b;
+      --line: #34332d; --accent: #6fcfae; --warn-bg: #3a2f10; --warn-fg: #f1d68a;
+      --bad-bg: #3b1a17; --bad-fg: #f3b0aa;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 16px; }
+  .notice { background: var(--warn-bg); color: var(--warn-fg); border-radius: 8px;
+            padding: 10px 12px; font-size: 14px; margin-bottom: 16px; }
+  form { display: flex; gap: 8px; }
+  input[type=search] { flex: 1; padding: 12px; font-size: 16px; border-radius: 8px;
+                       border: 1px solid var(--line); background: var(--card); color: var(--fg); }
+  button { padding: 12px 18px; font-size: 16px; border-radius: 8px; border: 0;
+           background: var(--accent); color: #fff; cursor: pointer; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+          padding: 14px 16px; margin-top: 16px; }
+  .card h2 { font-size: 17px; margin: 0 0 8px; }
+  .tag { display: inline-block; font-size: 12px; padding: 2px 8px; border-radius: 99px;
+         background: var(--line); color: var(--muted); margin-bottom: 8px; }
+  .unverified { background: var(--bad-bg); color: var(--bad-fg); padding: 8px 10px;
+                border-radius: 6px; font-size: 14px; margin-bottom: 8px; }
+  .refuse { background: var(--card); border: 1px dashed var(--line); }
+  ol, ul { padding-left: 20px; margin: 8px 0; }
+  .meta { color: var(--muted); font-size: 13px; margin-top: 10px; }
+  a { color: var(--accent); }
+  footer { color: var(--muted); font-size: 13px; margin-top: 32px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Hỏi đáp thủ tục đất đai</h1>
+  <p class="sub">Tây Ninh &middot; Hướng dẫn thủ tục kèm nguồn văn bản</p>
+
+  <div class="notice">
+    Đây là hướng dẫn thủ tục chung, <strong>không phải tư vấn pháp lý</strong> cho trường hợp riêng của bạn.
+    Hãy xác nhận lại với cơ quan có thẩm quyền hoặc luật sư trước khi giao dịch.
+  </div>
+
+  <form id="f">
+    <input type="search" id="q" placeholder="Ví dụ: sang tên sổ đỏ cần giấy tờ gì?" autocomplete="off" required>
+    <button>Tìm</button>
+  </form>
+
+  <section id="out" aria-live="polite"></section>
+
+  <footer>
+    Ứng dụng không lưu câu hỏi của bạn. Câu trả lời lấy từ cơ sở dữ liệu được kiểm chứng thủ công,
+    nếu chưa có câu trả lời, ứng dụng sẽ không đoán.
+  </footer>
+</main>
+
+<script>
+(function () {
+  var DATA_URL = "data/answers.json";
+  var entries = [];
+
+  // bỏ dấu tiếng Việt để so khớp từ khóa
+  function norm(s) {
+    return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
+            .replace(/đ/g, "d").replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
+  }
+
+  function esc(s) {
+    var d = document.createElement("div");
+    d.textContent = s;
+    return d.innerHTML;
+  }
+
+  function score(entry, tokens) {
+    var hay = norm([entry.question].concat(entry.keywords || []).join(" "));
+    var n = 0;
+    tokens.forEach(function (t) { if (t.length > 1 && hay.indexOf(t) !== -1) n++; });
+    return n;
+  }
+
+  function render(e) {
+    var steps = (e.steps || []).map(function (s) { return "<li>" + esc(s) + "</li>"; }).join("");
+    var src = (e.sources || []).map(function (s) {
+      return '<li><a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.title) + "</a></li>";
+    }).join("");
+    var warn = e.status === "da_kiem_chung" ? "" :
+      '<div class="unverified">CHƯA KIỂM CHỨNG &mdash; không dùng để ra quyết định.</div>';
+    return '<div class="card">' +
+      '<span class="tag">' + esc(e.topic || "") + "</span>" + warn +
+      "<h2>" + esc(e.question) + "</h2>" +
+      (e.summary ? "<p>" + esc(e.summary) + "</p>" : "") +
+      (steps ? "<ol>" + steps + "</ol>" : "") +
+      (src ? "<strong>Nguồn:</strong><ul>" + src + "</ul>" : "") +
+      '<div class="meta">Kiểm chứng bởi: ' + esc(e.verifiedBy || "chưa có") +
+      " &middot; Ngày: " + esc(e.verifiedDate || "chưa có") +
+      " &middot; Hiệu lực áp dụng: " + esc(e.asOf || "chưa rõ") + "</div></div>";
+  }
+
+  function refuse() {
+    return '<div class="card refuse"><h2>Chưa có câu trả lời đã kiểm chứng</h2>' +
+      "<p>Ứng dụng không đoán. Bạn nên hỏi trực tiếp cơ quan có thẩm quyền " +
+      "(văn phòng đăng ký đất đai, UBND cấp xã) hoặc một luật sư.</p></div>";
+  }
+
+  document.getElementById("f").addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var q = norm(document.getElementById("q").value);
+    var tokens = q.split(" ");
+    var hits = entries.map(function (e) { return { e: e, s: score(e, tokens) }; })
+      .filter(function (x) { return x.s >= 2; })
+      .sort(function (a, b) { return b.s - a.s; })
+      .slice(0, 3);
+    document.getElementById("out").innerHTML = hits.length
+      ? hits.map(function (x) { return render(x.e); }).join("")
+      : refuse();
+  });
+
+  fetch(DATA_URL).then(function (r) { return r.json(); })
+    .then(function (d) { entries = d.entries || []; })
+    .catch(function () {
+      document.getElementById("out").innerHTML =
+        '<div class="card refuse"><h2>Không tải được dữ liệu</h2></div>';
+    });
+})();
+</script>
+</body>
+</html>

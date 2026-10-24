@@ -1,0 +1,20 @@
+{
+  "_ghi_chu": "Mỗi mục phải được kiểm chứng với văn bản chính thức và một người có chuyên môn trước khi đặt status = da_kiem_chung. Mục mẫu dưới đây chỉ để thử khung, không chứa nội dung pháp lý.",
+  "entries": [
+    {
+      "id": "mau-001",
+      "topic": "MẪU",
+      "question": "Mục mẫu để thử khung: sang tên sổ đỏ cần giấy tờ gì",
+      "keywords": ["sang ten", "so do", "giay to", "chuyen nhuong"],
+      "summary": "Nội dung mẫu, chưa phải thông tin pháp lý.",
+      "steps": ["Bước 1 (mẫu)", "Bước 2 (mẫu)"],
+      "sources": [
+        { "title": "Điền tên văn bản chính thức", "url": "https://example.com" }
+      ],
+      "status": "mau",
+      "verifiedBy": "",
+      "verifiedDate": "",
+      "asOf": ""
+    }
+  ]
+}
